@@ -1,5 +1,5 @@
 // 몽구스 모델을 가져온다.
-const monoose = require("mongoose");
+const mongoose = require("mongoose");
 
 // trim : 공백제거
 const userSchema = mongoose.Schema({
@@ -33,6 +33,6 @@ const userSchema = mongoose.Schema({
   },
 });
 
-const User = monoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = { User };
